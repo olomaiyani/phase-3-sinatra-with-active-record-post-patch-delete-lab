@@ -22,5 +22,16 @@ class ApplicationController < Sinatra::Base
     baked_good = BakedGood.by_price.first
     baked_good.to_json
   end
+  post '/baked_good'
+
+end
+
+patch '//bakeries/:id'
+
+end
+delete '/baked_goods/:id'
+
+end
+
 
 end
